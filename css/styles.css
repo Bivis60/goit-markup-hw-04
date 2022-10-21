@@ -385,7 +385,6 @@ body {
 .bottom-box {
   display: flex;
   align-items: baseline;
-  gap: 70px;
 }
 
 .bottom-logo-text {
@@ -425,12 +424,13 @@ body {
 }
 
 .bottom-join {
+  margin-left: 70px;
 }
 
 .bottom-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--addres-color);
   text-transform: uppercase;
@@ -489,7 +489,12 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
-.filter-galery:hover {
+
+.filter-galery-item {
+  display: block;
+}
+.filter-galery-item:hover,
+.filter-galery-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
